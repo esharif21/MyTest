@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Customers";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-primary">Customer Management</h2>
+
+    <div class="card p-4 shadow-sm mb-4">
+        <form id="customerForm" class="row g-3 needs-validation" novalidate>
+            <input type="hidden" id="Id" />
+
+            <div class="col-md-3">
+                <label class="form-label">Name</label>
+                <input type="text" id="Name" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Email</label>
+                <input type="email" id="Email" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Mobile</label>
+                <input type="text" id="Mobile" class="form-control" required />
+            </div>
+            <div class="col-md-3 d-flex align-items-end">
+                <button type="button" class="btn btn-success me-2" onclick="save()">Save</button>
+                <button type="button" class="btn btn-secondary" onclick="clearForm()">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover border">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tblData"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        loadData();
+    });
+
+    function save() {
+        // ফ্রন্ট-এন্ড ভ্যালিডেশন
+        let name = $("#Name").val();
+        let email = $("#Email").val();
+        let mobile = $("#Mobile").val();
+
+        if (!name || !email || !mobile) {
+            alert("Please enter values in all fields");
+            return;
+        }
+
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+    if (!emailPattern.test(email)) {
+        alert("Invalide email address");
+        return;
+    }
+
+        let mobilePattern = /^(01)[3-9]\d{8}$/;
+            if (!mobilePattern.test(mobile)) {
+            alert("Please enter correct mobile number.");
+            return;
+        }
+
+        let obj = {
+            id: $("#Id").val(),
+            name: name,
+            email: email,
+            mobile: mobile
+        };
+
+        let url = obj.id ? "/Customers/Update" : "/Customers/Create";
+
+        $.post(url, obj, function () {
+            loadData();
+            clearForm();
+        });
+    }
+
+    function loadData() {
+        $.get("/Customers/GetAll", function (data) {
+            let rows = "";
+            data.forEach(c => {
+                rows += `<tr>
+                    <td>${c.Id}</td>
+                    <td>${c.Name}</td>
+                    <td>${c.Email}</td>
+                    <td>${c.Mobile}</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning" onclick="edit(${c.Id})">Edit</button>
+                        <button class="btn btn-sm btn-danger" onclick="removeData(${c.Id})">Delete</button>
+                    </td>
+                </tr>`;
+            });
+            $("#tblData").html(rows);
+        });
+    }
+
+    function edit(id) {
+        $.get("/Customers/Get?id=" + id, function (data) {
+            $("#Id").val(data.Id);
+            $("#Name").val(data.Name);
+            $("#Email").val(data.Email);
+            $("#Mobile").val(data.Mobile);
+        });
+    }
+
+    function removeData(id) {
+        if(confirm("Are you sure, you want to delete?")) {
+            $.post("/Customers/Delete", { id: id }, function () {
+                loadData();
+            });
+        }
+    }
+
+    function clearForm() {
+        $("#Id").val("");
+        $("#Name").val("");
+        $("#Email").val("");
+        $("#Mobile").val("");
+    }
+</script>

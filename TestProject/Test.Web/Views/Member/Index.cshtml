@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <div class="text-center mb-4">
+        <b class="headerline">MEMBER LIST</b>
+    </div>
+    <p>
+        <a asp-action="create" class="btn btn-primary" asp-controller="account">
+            <i class="fas fa-plus flex-shrink-0"></i>
+            Create New Member
+        </a>
+    </p>
+    <div class="col-md-12 col-sm-12" style="overflow-x:scroll;overflow:auto;">
+        <table class="table table-hover table-striped table-responsive caption-top small">
+            <caption class="bg-primary text-center text-white">
+                Member List:
+            </caption>
+            <thead class="table-primary text-white">
+                <tr>
+                    <th>Membership ID</th>
+                    <th>Full Name</th>
+                    <th>Member Type</th>
+                    <th>Mother Company</th>
+                    <th>Licence Type</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>IsActive</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="pagedData">
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-12" style="overflow-x:scroll;overflow:auto;">
+        <div id="pagingButtons"></div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function () {
+            var pageSize = 10; // Change it to your desired page size
+            var pageNumber = 1; // Initially load the first page
+            fetchData(pageNumber, pageSize);
+
+            function fetchData(pageNumber, pageSize) {
+                $.ajax({
+                    url: '@Url.Action("GetPagedData", "Member")',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: { pageNumber: pageNumber, pageSize: pageSize },
+                    success: function (response) {
+                        console.log(response)
+                        displayData(response.data);
+                        displayPagination(response.totalRecords, pageNumber, pageSize);
+                    },
+                    error: function (ex) {
+                        console.error('Error fetching data.' + ex);
+                    }
+                });
+            }
+
+            function displayData(data) {
+                var html = '';
+                $.each(data, function (index, item) {
+                    html += '<tr>';
+                    html += '<td>' + (item.MembershipId !== null ? item.MembershipId : "") + '</td>';
+                    html += '<td>' + (item.FullName !== null ? item.FullName : "") + '</td>';
+                    html += '<td>' + (item.MemberType !== null ? item.MemberType : "") + '</td>';
+                    html += '<td>' + (item.MotherCompanyName !== null ? item.MotherCompanyName : "") + '</td>';
+                    html += '<td>' + (item.LicenceType !== null ? item.LicenceType : "") + '</td>';
+                    html += '<td>' + (item.MobileNo !== null ? item.MobileNo : "") + '</td>';
+                    html += '<td>' + (item.Email !== null ? item.Email : "") + '</td>';
+                    html += '<td>' + (item.Role !== null ? item.Role : "") + '</td>';
+                    html += '<td>' + (item.IsActive !== null ? item.IsActive : "") + '</td>';
+                    html += '<td><a href="/Member/Edit?id=' + item.Id + '">Edit</a> | <a href="/Member/Details?id=' + item.Id + '">Details</a></td>';
+                    html += '</tr>';
+                });
+                html += '';
+                $('#pagedData').html(html);
+            }
+
+            function displayPagination(totalRecords, pageNumber, pageSize) {
+                var totalPages = Math.ceil(totalRecords / pageSize);
+                var paginationHtml = '<ul class="pagination">';
+
+                // First button
+                paginationHtml += '<li class="page-item ' + (pageNumber === 1 ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="#" data-page="1">First</a>';
+                paginationHtml += '</li>';
+
+                // Previous button
+                paginationHtml += '<li class="page-item ' + (pageNumber === 1 ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="#" data-page="' + (pageNumber - 1) + '">Previous</a>';
+                paginationHtml += '</li>';
+
+                // Page buttons
+                var startPage = Math.max(1, pageNumber - 4);
+                var endPage = Math.min(totalPages, startPage + 9);
+                for (var i = startPage; i <= endPage; i++) {
+                    paginationHtml += '<li class="page-item ' + (pageNumber === i ? 'active' : '') + '">';
+                    paginationHtml += '<a class="page-link" href="#" data-page="' + i + '">' + i + '</a>';
+                    paginationHtml += '</li>';
+                }
+
+                // Next button
+                paginationHtml += '<li class="page-item ' + (pageNumber === totalPages ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="#" data-page="' + (pageNumber + 1) + '">Next</a>';
+                paginationHtml += '</li>';
+
+                // Last button
+                paginationHtml += '<li class="page-item ' + (pageNumber === totalPages ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="#" data-page="' + totalPages + '">Last</a>';
+                paginationHtml += '</li>';
+
+                paginationHtml += '</ul>';
+
+                $('#pagingButtons').html(paginationHtml);
+            }
+
+            $(document).on('click', '.pagination a', function (e) {
+                e.preventDefault();
+                pageNumber = $(this).data('page');
+                fetchData(pageNumber, pageSize);
+            });
+        });
+    </script>
+}

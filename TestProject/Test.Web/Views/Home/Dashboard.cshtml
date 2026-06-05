@@ -1,0 +1,59 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Dashboard Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fas fa-user-circle flex-shrink-0"></i>
+                    <div>
+                        <span data-purecounter-start="0" data-purecounter-end="@Model.GeneralMember" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>#General Members</p>
+                    </div>
+                </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fas fa-user flex-shrink-0"></i>
+                    <div>
+                        <span data-purecounter-start="0" data-purecounter-end="@Model.AssociateMember" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>#Associate Members</p>
+                    </div>
+                </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fas fa-bar-chart flex-shrink-0"></i>
+                    <div>
+                        <span data-purecounter-start="0" data-purecounter-end="@Model.NoOfCurrentMonthCollection" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>#Payment in <b>@DateTime.Now.ToString("MMMM")</b></p>
+                    </div>
+                </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="stats-item d-flex align-items-center w-100 h-100">
+                    <i class="fas fa-bangladeshi-taka-sign flex-shrink-0"></i>
+                    <div>
+                        <span data-purecounter-start="0" data-purecounter-end="@Model.SumOfCurrentMonthCollection" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Toal Collected This Month</p>
+                    </div>
+                </div>
+            </div><!-- End Stats Item -->
+
+        </div>
+
+    </div>
+
+</section><!-- /Stats Section -->

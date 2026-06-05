@@ -1,0 +1,8 @@
+
+run this in solution directory:
+dotnet ef dbcontext scaffold "Name=DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer -o Entities --project Test.Model --startup-project Test.Web -f
+
+Scaffold-DbContext "Name=DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -Project Test.Model -StartupProject Test.Web -Force
+
+dotnet tool install --global dotnet-ef
+

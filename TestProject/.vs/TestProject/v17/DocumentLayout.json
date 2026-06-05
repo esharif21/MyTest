@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KIBSSL_Folder\\TestProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\views\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\views\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\views\\member\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\views\\member\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\classes\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\classes\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}|Test.Model\\Test.Model.csproj|d:\\kibssl_folder\\testproject\\test.model\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}|Test.Model\\Test.Model.csproj|solutionrelative:test.model\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\classes\\customauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\classes\\customauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\classes\\applicationenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\classes\\applicationenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}|Test.Model\\Test.Model.csproj|d:\\kibssl_folder\\testproject\\test.model\\viewmodels\\membercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}|Test.Model\\Test.Model.csproj|solutionrelative:test.model\\viewmodels\\membercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}|Test.Model\\Test.Model.csproj|d:\\kibssl_folder\\testproject\\test.model\\entities\\testprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}|Test.Model\\Test.Model.csproj|solutionrelative:test.model\\entities\\testprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|d:\\kibssl_folder\\testproject\\test.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6053B2FD-C2C3-446F-92C0-6E4FA639B72B}|Test.Web\\Test.Web.csproj|solutionrelative:test.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Controllers\\CustomersController.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Test.Web\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:34:39.312Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Member\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Test.Web\\Views\\Member\\Delete.cshtml",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Member\\Delete.cshtml",
+              "RelativeToolTip": "Test.Web\\Views\\Member\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T05:39:07.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Classes\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Classes\\AppSettings.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Classes\\AppSettings.cs",
+              "RelativeToolTip": "Test.Web\\Classes\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:38:37.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Customers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Test.Web\\Views\\Customers\\Index.cshtml",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Customers\\Index.cshtml",
+              "RelativeToolTip": "Test.Web\\Views\\Customers\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T05:37:51.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Program.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Program.cs",
+              "RelativeToolTip": "Test.Web\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:35:30.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Test.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Test.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T05:28:01.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Home\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Test.Web\\Views\\Home\\Dashboard.cshtml",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Home\\Dashboard.cshtml",
+              "RelativeToolTip": "Test.Web\\Views\\Home\\Dashboard.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T05:27:34.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Test.Web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Test.Web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T05:27:30.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Test.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Test.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T05:24:59.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationEnums.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Classes\\ApplicationEnums.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Classes\\ApplicationEnums.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Classes\\ApplicationEnums.cs",
+              "RelativeToolTip": "Test.Web\\Classes\\ApplicationEnums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:23:19.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomAuthorizeAttribute.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Classes\\CustomAuthorizeAttribute.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Classes\\CustomAuthorizeAttribute.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Classes\\CustomAuthorizeAttribute.cs",
+              "RelativeToolTip": "Test.Web\\Classes\\CustomAuthorizeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:19:50.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Test.Web\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:17:37.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Controllers\\MemberController.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "Test.Web\\Controllers\\MemberController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:15:17.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MemberCreateVm.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\ViewModels\\MemberCreateVm.cs",
+              "RelativeDocumentMoniker": "Test.Model\\ViewModels\\MemberCreateVm.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\ViewModels\\MemberCreateVm.cs",
+              "RelativeToolTip": "Test.Model\\ViewModels\\MemberCreateVm.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwvwAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:14:13.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "Test.Model\\Entities\\Customer.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Entities\\Customer.cs",
+              "RelativeToolTip": "Test.Model\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:13:52.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TestProjectContext.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Entities\\TestProjectContext.cs",
+              "RelativeDocumentMoniker": "Test.Model\\Entities\\TestProjectContext.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Entities\\TestProjectContext.cs",
+              "RelativeToolTip": "Test.Model\\Entities\\TestProjectContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T05:12:02.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Test.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Test.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIAwwCMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T04:53:36.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Test.Web\\appsettings.json",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\appsettings.json",
+              "RelativeToolTip": "Test.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-05T04:50:53.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Test.Web\\appsettings.Development.json",
+              "ToolTip": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\appsettings.Development.json",
+              "RelativeToolTip": "Test.Web\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-05T04:50:51.489Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

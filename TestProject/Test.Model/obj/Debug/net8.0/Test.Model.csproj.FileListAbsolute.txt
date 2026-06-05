@@ -1,0 +1,14 @@
+D:\KIBSSL_Folder\TestProject\Test.Model\bin\Debug\net8.0\Test.Model.deps.json
+D:\KIBSSL_Folder\TestProject\Test.Model\bin\Debug\net8.0\Test.Model.runtimeconfig.json
+D:\KIBSSL_Folder\TestProject\Test.Model\bin\Debug\net8.0\Test.Model.dll
+D:\KIBSSL_Folder\TestProject\Test.Model\bin\Debug\net8.0\Test.Model.pdb
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.csproj.AssemblyReference.cache
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.AssemblyInfoInputs.cache
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.AssemblyInfo.cs
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.csproj.CoreCompileInputs.cache
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.dll
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\refint\Test.Model.dll
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.pdb
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\Test.Model.genruntimeconfig.cache
+D:\KIBSSL_Folder\TestProject\Test.Model\obj\Debug\net8.0\ref\Test.Model.dll

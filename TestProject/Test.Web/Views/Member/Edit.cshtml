@@ -1,0 +1,125 @@
+﻿@model Isp.Model.ViewModels.MemberEditVm
+
+@{
+    ViewData["Title"] = "Edit Member";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="card shadow border-0">
+                <div class="card-header text-white text-center" style="background:#312783">
+                    <h4 class="mb-0 text-white">Edit Member Information</h4>
+                </div>
+
+                <div class="card-body p-4">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label asp-for="FullName" class="form-label fw-semibold"></label>
+                                <input asp-for="FullName" class="form-control" placeholder="Enter full name" />
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="MobileNo" class="form-label fw-semibold"></label>
+                                <input asp-for="MobileNo" class="form-control" placeholder="Enter mobile number" />
+                                <span asp-validation-for="MobileNo" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label fw-semibold"></label>
+                            <textarea asp-for="Address" class="form-control" rows="2" placeholder="Enter address"></textarea>
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="row mb-3">
+                            @*<div class="col-md-6">
+                                <label asp-for="RoleId" class="form-label fw-semibold"></label>
+                                <select asp-for="RoleId" class="form-select" asp-items="ViewBag.RoleId"></select>
+                                <span asp-validation-for="RoleId" class="text-danger"></span>
+                            </div> *@
+
+                            <div class="col-md-6">
+                                <label asp-for="LicenceTypeId" class="form-label fw-semibold"></label>
+                                <select asp-for="LicenceTypeId" class="form-select" asp-items="ViewBag.LicenceTypeId"></select>
+                                <span asp-validation-for="LicenceTypeId" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="EntryAt" class="form-label fw-semibold"></label>
+                                <input asp-for="EntryAt" type="datetime-local" class="form-control" disabled="disabled" />
+                                <span asp-validation-for="EntryAt" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label asp-for="IsActive" class="form-label fw-semibold"></label>
+                                <select asp-for="IsActive" class="form-select">
+                                    <option value="true">Active</option>
+                                    <option value="false">Inactive</option>
+                                </select>
+                                <span asp-validation-for="IsActive" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Email" class="form-label fw-semibold"></label>
+                                <input asp-for="Email" class="form-control" placeholder="Enter email address" disabled="disabled" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            @* <div class="col-md-6">
+                                <label asp-for="Password" class="form-label fw-semibold"></label>
+                                <input asp-for="Password" type="password" class="form-control" placeholder="Enter password" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div> *@
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label asp-for="UpdateBy" class="form-label fw-semibold"></label>
+                                <input asp-for="UpdateBy" class="form-control" placeholder="Updated by" disabled="disabled" />
+                                <span asp-validation-for="UpdateBy" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="UpdateAt" class="form-label fw-semibold"></label>
+                                <input asp-for="UpdateAt" type="datetime-local" class="form-control" disabled="disabled" />
+                                <span asp-validation-for="UpdateAt" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="LastLoginAt" class="form-label fw-semibold"></label>
+                            <input asp-for="LastLoginAt" type="datetime-local" class="form-control" disabled="disabled" />
+                            <span asp-validation-for="LastLoginAt" class="text-danger"></span>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <button type="submit" class="btn btn-primary px-4">
+                                <i class="bi bi-save me-1"></i> Save Changes
+                            </button>
+                            <a asp-action="Index" class="btn btn-outline-secondary ms-2">
+                                <i class="bi bi-arrow-left-circle me-1"></i> Back to List
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

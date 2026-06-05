@@ -1,0 +1,16 @@
+﻿@model Isp.Model.ViewModels.MemberProfileVm
+
+<div class="text-center mb-4">
+    <h5 class="fw-bold">Member Profile</h5>
+    <h6 class="fw-bold">Membership ID: @Model.MembershipId</h6>
+    <img class="rounded-circle border border-3 border-white mt-3 shadow-sm mb-3"
+         src="@Url.Content("/uploads/member_logo/"+ Model.CompanyLogoFileName ?? "~/images/default-user.png")"
+         width="100" height="100" alt="member logo" />
+
+    <!-- Upload Form -->
+    <form asp-action="UpdateProfilePicture" asp-controller="Member" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="file" asp-for="CompanyLogoFile" name="CompanyLogoFile" class="form-control mb-2" accept="image/*" required />
+        <button type="submit" class="btn btn-sm btn-primary">Update Picture</button>
+    </form>
+</div>

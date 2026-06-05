@@ -1,0 +1,234 @@
+﻿@model Isp.Model.Entities.Member
+
+@{
+    ViewData["Title"] = "Member Profile Details";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar Navigation (Pills/Tabs) -->
+        <div class="col-md-4 col-lg-3 bg-light-subtle min-vh-100 p-3 d-flex flex-column shadow-lg">
+            <!-- Header -->
+
+            <div class="text-center mb-4 position-relative d-inline-block">
+                <h5 class="fw-bold">Member Profile</h5>
+                <h6 class="fw-bold">Membership ID: @Model.MembershipId</h6>
+
+                <div class="profile-img-wrapper">
+                    <img class="rounded-circle border border-3 border-white mt-3 shadow-sm"
+                         src="@Url.Content("/uploads/member_logo/" + Model.CompanyLogoFileName ?? "/uploads/default-user.png")"
+                         alt="member logo"
+                         height="120"
+                         width="120"
+                         data-bs-toggle="modal"
+                         data-bs-target="#profilePictureModal" />
+
+                    <!-- Edit Icon -->
+                    <span class="edit-icon position-absolute bottom-0 end-0 translate-middle p-2 bg-dark bg-opacity-75 text-white rounded-circle fs-5"
+                          data-bs-toggle="modal"
+                          data-bs-target="#profilePictureModal"
+                          style="cursor:pointer;">
+                        <i class="bi bi-pencil"></i>
+                    </span>
+                </div>
+            </div>
+
+
+
+            <!-- Modal Start -->
+            <div class="modal fade" id="profilePictureModal" tabindex="-1" aria-labelledby="profilePictureModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="profilePictureModalLabel">Update Profile Picture</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            @await Html.PartialAsync("_ProfilePicture", new Isp.Model.ViewModels.MemberProfileVm
+                            { Id = Model.Id, MembershipId = Model.MembershipId,CompanyLogoFileName = Model.CompanyLogoFileName })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal end -->
+            <!-- Navigation -->
+            <div class="nav flex-column nav-pills flex-grow-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link mb-2 d-flex align-items-center active" id="v-pills-profile-tab" data-bs-toggle="pill"
+                   data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">
+                    <i class="bi bi-person me-2"></i> <span>Profile Details</span>
+                </a>
+
+                <a class="nav-link mb-2 d-flex align-items-center" id="v-pills-company-tab" data-bs-toggle="pill"
+                   data-bs-target="#v-pills-company" role="tab" aria-controls="v-pills-company" aria-selected="false">
+                    <i class="bi bi-building me-2"></i> <span>Company Info</span>
+                </a>
+
+                <a class="nav-link mb-2 d-flex align-items-center" id="v-pills-settings-tab" data-bs-toggle="pill"
+                   data-bs-target="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="bi bi-gear me-2"></i> <span>Settings & Access</span>
+                </a>
+            </div>
+
+            <!-- Logout -->
+            <div class="mt-auto">
+                <a class="nav-link d-flex align-items-center ps-3 p-2 text-bg-danger ounded" asp-controller="login" asp-action="logout">
+                    <i class="bi bi-box-arrow-right me-2"></i> <span>Logout</span>
+                </a>
+            </div>
+        </div>
+
+        <style>
+            .nav-link {
+                border-radius: 8px;
+                background-color: #f8f9fa; /* Light default */
+                color: #212529; /* Dark text */
+                transition: all 0.2s ease-in-out;
+            }
+
+                .nav-link:hover {
+                    background-color: #e2e6ea; /* Slightly darker on hover */
+                }
+
+                .nav-link.active {
+                    background-color: #312783 !important; /* Bootstrap primary */
+                    color: #fff; /* White text */
+                    font-weight: 600;
+                }
+
+                    .nav-link.active:hover {
+                    }
+
+
+
+            .profile-img-wrapper {
+                position: relative; /* important! */
+                display: inline-block;
+            }
+
+                .profile-img-wrapper .edit-icon {
+                    display: none;
+                }
+
+                .profile-img-wrapper:hover .edit-icon {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+        </style>
+
+
+        <!-- Content Area: Tab Panes -->
+        <div class="col-md-8 col-lg-9 p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4>Profile Details for Member: @Html.DisplayFor(model => model.FullName)</h4>
+                <!-- Edit Button -->
+                <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">
+                    <i class="bi bi-pencil-square"></i> Edit
+                </a>
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+
+                <!-- 1. Profile Details Pane (Active by Default) -->
+                <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                    <div class="row">
+                        <h5 class="border-bottom pb-2 mb-3"><i class="bi bi-info-circle me-2"></i> Basic & Contact Information</h5>
+
+                        <!-- Left Column (Contact) -->
+                        <div class="col-md-6">
+                            <p class="mb-2"><i class="bi bi-person-circle me-2"></i> <strong> Name :</strong> @Html.DisplayFor(model => model.FullName)</p>
+                            <p class="mb-2"><i class="bi bi-phone me-2"></i> <strong>Mobile No. :</strong> @Html.DisplayFor(model => model.MobileNo)</p>
+                            <p class="mb-2"><i class="bi bi-envelope me-2"></i> <strong>@Html.DisplayNameFor(model => model.Email) :</strong> @Html.DisplayFor(model => model.Email)</p>
+                            <p class="mb-2"><i class="bi bi-geo-alt me-2"></i> <strong>@Html.DisplayNameFor(model => model.Address) :</strong> @Html.DisplayFor(model => model.Address)</p>
+                        </div>
+
+                        <!-- Right Column (Auditing) -->
+                        <div class="col-md-6">
+                            <p class="mb-2"><i class="bi bi-clock me-2"></i> <strong>Last Login Time :</strong> @Html.DisplayFor(model => model.LastLoginAt)</p>
+                            <p class="mb-2">
+                                <i class="bi bi-person-fill-gear me-2"></i> <strong>Entry By :</strong>
+                                @if (Model.EntryAt != null)
+                                {
+                                    <b>Admin</b>
+                                }
+                            </p>
+                            <p class="mb-2"><i class="bi bi-calendar-plus me-2"></i> <strong>Reg. Date & Time :</strong> @Html.DisplayFor(model => model.EntryAt)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Company Info Pane -->
+                <div class="tab-pane fade" id="v-pills-company" role="tabpanel" aria-labelledby="v-pills-company-tab" tabindex="0">
+                    <div class="row">
+                        <h5 class="border-bottom pb-2 mb-3"><i class="bi bi-building me-2"></i> Company Information & Licensing</h5>
+
+                        <!-- Left Column (Company Details) -->
+                        <div class="col-md-6">
+                            <p class="mb-2"><i class="bi bi-building me-2"></i> <strong>Mother Company Name :</strong> @(Model.MotherCompanyName ?? "")</p>
+                            <p class="mb-2"><i class="bi bi-image me-2"></i> <strong>Company Logo File:</strong> @(Model.CompanyLogoFileName == null ? "" : "Added")</p>
+                        </div>
+
+                        <!-- Right Column (Licensing & Verification) -->
+                        <div class="col-md-6">
+                            <p class="mb-2"><i class="bi bi-file-earmark-check me-2"></i> <strong>Licence Type :</strong>
+                                @if (Model.LicenceTypeId == 1)
+                                {
+                                    <b>Upazila</b>
+                                }
+                                else if (Model.LicenceTypeId == 2)
+                                {
+                                    <b>District</b>
+                                }
+                                else if (Model.LicenceTypeId == 3)
+                                {
+                                    <b>Division</b>
+                                }
+                                else if (Model.LicenceTypeId == 4)
+                                {
+                                    <b>Nationwide</b>
+                                }
+                                else
+                                {
+                                    <b>N/A</b>
+                                }
+                            </p>
+                            <p class="mb-2"><i class="bi bi-patch-check me-2"></i> <strong>Account Verify :</strong> @(Model.AccountVerify?.Name ?? "")</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Settings & Access Pane -->
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                    <div class="row">
+                        <h5 class="border-bottom pb-2 mb-3"><i class="bi bi-lock me-2"></i> Access Control & Status</h5>
+
+                        <!-- Left Column (Access/Roles) -->
+                        <div class="col-md-6">
+                            <p class="mb-2"><i class="bi bi-key me-2"></i> <strong>@Html.DisplayNameFor(model => model.Id) :</strong> @Model.Id</p>
+                            <p class="mb-2"><i class="bi bi-person-badge me-2"></i> <strong>@Html.DisplayNameFor(model => model.MembershipId) :</strong> @Model.MembershipId</p>
+                            <p class="mb-2"><i class="bi bi-tag me-2"></i> <strong>Member Type :</strong> @(Model.MemberType?.Name ?? "")</p>
+                            <p class="mb-2"><i class="bi bi-check-circle me-2"></i> <strong>@Html.DisplayNameFor(model => model.IsActive) :</strong> @(Model.IsActive == true ? "Yes" : "No")</p>
+                        </div>
+
+                        <!-- Right Column (Security/Status) -->
+                        <div class="col-md-6">
+                            <p class="mb-2"><i class="bi bi-shield-lock-fill me-2"></i> <strong>User Role :</strong> @(Model.Role?.Name ?? "")</p>
+                            <p class="mb-2"><i class="bi bi-person-fill-up me-2"></i> <strong>Update By :</strong> User</p>
+                            <p class="mb-2"><i class="bi bi-calendar-check me-2"></i> <strong>Last Update Date :</strong> @(Model.UpdateAt?.ToString("dd-MM-yyyy HH:mm") ?? "")</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr class="mt-4 mb-4" />
+
+                <!-- Action buttons at the bottom -->
+                <div>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
