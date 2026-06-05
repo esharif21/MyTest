@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Web", "Test.Web\Test.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Model", "Test.Model\Test.Model.csproj", "{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.Model", "Oracle.Model\Oracle.Model.csproj", "{06D57FC9-D1EA-4F12-BB60-CB804B0E2F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Api", "Test.Api\Test.Api.csproj", "{56A9B07D-4E4B-433A-950C-2FCF6ED8563B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{750EC222-45D5-441C-AAF5-30C6CE8DBC8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D57FC9-D1EA-4F12-BB60-CB804B0E2F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D57FC9-D1EA-4F12-BB60-CB804B0E2F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D57FC9-D1EA-4F12-BB60-CB804B0E2F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D57FC9-D1EA-4F12-BB60-CB804B0E2F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A9B07D-4E4B-433A-950C-2FCF6ED8563B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A9B07D-4E4B-433A-950C-2FCF6ED8563B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A9B07D-4E4B-433A-950C-2FCF6ED8563B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A9B07D-4E4B-433A-950C-2FCF6ED8563B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

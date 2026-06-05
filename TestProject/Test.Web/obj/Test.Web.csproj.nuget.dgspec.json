@@ -1,17 +1,100 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Test.Web.csproj": {}
+    "D:\\git\\MyTest\\TestProject\\Test.Web\\Test.Web.csproj": {}
   },
   "projects": {
-    "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Test.Model.csproj": {
+    "D:\\git\\MyTest\\TestProject\\Oracle.Model\\Oracle.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Test.Model.csproj",
-        "projectName": "Test.Model",
-        "projectPath": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Test.Model.csproj",
+        "projectUniqueName": "D:\\git\\MyTest\\TestProject\\Oracle.Model\\Oracle.Model.csproj",
+        "projectName": "Oracle.Model",
+        "projectPath": "D:\\git\\MyTest\\TestProject\\Oracle.Model\\Oracle.Model.csproj",
         "packagesPath": "C:\\Users\\digit\\.nuget\\packages\\",
-        "outputPath": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\obj\\",
+        "outputPath": "D:\\git\\MyTest\\TestProject\\Oracle.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\digit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.21.91, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\git\\MyTest\\TestProject\\Test.Model\\Test.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\git\\MyTest\\TestProject\\Test.Model\\Test.Model.csproj",
+        "projectName": "Test.Model",
+        "projectPath": "D:\\git\\MyTest\\TestProject\\Test.Model\\Test.Model.csproj",
+        "packagesPath": "C:\\Users\\digit\\.nuget\\packages\\",
+        "outputPath": "D:\\git\\MyTest\\TestProject\\Test.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,11 +141,17 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
             }
           },
           "imports": [
@@ -85,14 +174,14 @@
         }
       }
     },
-    "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Test.Web.csproj": {
+    "D:\\git\\MyTest\\TestProject\\Test.Web\\Test.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Test.Web.csproj",
+        "projectUniqueName": "D:\\git\\MyTest\\TestProject\\Test.Web\\Test.Web.csproj",
         "projectName": "Test.Web",
-        "projectPath": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\Test.Web.csproj",
+        "projectPath": "D:\\git\\MyTest\\TestProject\\Test.Web\\Test.Web.csproj",
         "packagesPath": "C:\\Users\\digit\\.nuget\\packages\\",
-        "outputPath": "D:\\KIBSSL_Folder\\TestProject\\Test.Web\\obj\\",
+        "outputPath": "D:\\git\\MyTest\\TestProject\\Test.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -113,8 +202,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Test.Model.csproj": {
-                "projectPath": "D:\\KIBSSL_Folder\\TestProject\\Test.Model\\Test.Model.csproj"
+              "D:\\git\\MyTest\\TestProject\\Oracle.Model\\Oracle.Model.csproj": {
+                "projectPath": "D:\\git\\MyTest\\TestProject\\Oracle.Model\\Oracle.Model.csproj"
+              },
+              "D:\\git\\MyTest\\TestProject\\Test.Model\\Test.Model.csproj": {
+                "projectPath": "D:\\git\\MyTest\\TestProject\\Test.Model\\Test.Model.csproj"
               }
             }
           }
@@ -139,17 +231,13 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

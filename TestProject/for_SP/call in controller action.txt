@@ -1,0 +1,7 @@
+ public IActionResult GetPagedData(int pageNumber, int pageSize, DocumentSearchParam searchParam)
+ {
+     searchParam.EntryBy = HttpContext.Session.GetString(SessionVariables.EMP_CODE);
+     var result = new DocumentService(_context.Database.GetConnectionString()).GetDocumentPagedDataAsync(pageNumber, pageSize, searchParam).Result;
+     var totalRecords = result.FirstOrDefault()?.TotalCount;
+     return Json(new { result, totalRecords });
+ }

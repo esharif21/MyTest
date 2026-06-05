@@ -1,43 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Test.Model.Entities;
-
-public partial class TestProjectContext : DbContext
+namespace Test.Model.Entities
 {
-    public TestProjectContext()
+    public partial class TestProjectContext : DbContext
     {
-    }
-
-    public TestProjectContext(DbContextOptions<TestProjectContext> options)
-        : base(options)
-    {
-    }
-
-    public virtual DbSet<Customer> Customers { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Name=DefaultConnection");
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Customer>(entity =>
+        public TestProjectContext()
         {
-            entity.HasKey(e => e.Id).HasName("PK__Customer__3214EC070EA645B0");
+        }
 
-            entity.ToTable("Customer");
+        public TestProjectContext(DbContextOptions<TestProjectContext> options)
+            : base(options)
+        {
+        }
 
-            entity.Property(e => e.CreatedDate)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
-            entity.Property(e => e.Email).HasMaxLength(100);
-            entity.Property(e => e.Mobile).HasMaxLength(20);
-            entity.Property(e => e.Name).HasMaxLength(100);
-        });
+        public virtual DbSet<Customer> Customers { get; set; } = null!;
 
-        OnModelCreatingPartial(modelBuilder);
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Name=DefaultConnection");
+            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Customer>(entity =>
+            {
+                entity.ToTable("Customer");
+
+                entity.Property(e => e.CreatedDate)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Email).HasMaxLength(100);
+
+                entity.Property(e => e.Mobile).HasMaxLength(20);
+
+                entity.Property(e => e.Name).HasMaxLength(100);
+            });
+
+            OnModelCreatingPartial(modelBuilder);
+        }
+
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
-
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
