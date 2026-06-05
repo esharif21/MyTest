@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Oracle.Model.Entities;
 using System;
 
-[Route("api/[controller]")]
 [ApiController]
+[Route("api/[controller]")]
+
 public class CustomerController : ControllerBase
 {
     private readonly ModelContext _context;
@@ -27,6 +29,7 @@ public class CustomerController : ControllerBase
     // =========================
     // GET: api/customer/5
     // =========================
+    [Authorize] // FOR TESTING AUTHORIZATION, ADDED ON GETBYID API
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(decimal id)
     {
